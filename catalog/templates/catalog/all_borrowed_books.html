@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>All Loaned Books</h1>
+
+    {% if object_list %}
+    <ul>
+        {% for bookinst in object_list %}
+        <li>
+            <a href="{% url 'book-detail' bookinst.book.pk %}">{{ bookinst.book.title }}</a>(Due back: {{ bookinst.due_back }}) - {{ bookinst.borrower.get_username }}
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+        <p>There are no books currently loaned out.</p>
+    {% endif %}
+{% endblock %}
