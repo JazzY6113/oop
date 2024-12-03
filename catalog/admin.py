@@ -1,11 +1,7 @@
 from django.contrib import admin
 from .models import Author, Genre, Book, BookInstance
 
-# admin.site.register(Author)
 admin.site.register(Genre)
-#admin.site.register(Book)
-#admin.site.register(BookInstance)
-
 
 @admin.register(BookInstance)
 class BookInstanceAdmin(admin.ModelAdmin):
@@ -16,7 +12,7 @@ class BookInstanceAdmin(admin.ModelAdmin):
         (None, {
             'fields': ('book','imprint', 'id')
         }),
-        ('Availability', {
+        ('Доступность', {
             'fields': ('status', 'due_back','borrower')
         }),
     )

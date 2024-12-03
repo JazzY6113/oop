@@ -10,11 +10,11 @@ class RenewBookModelForm(ModelForm):
 
        #Проверка того, что дата не в прошлом
        if data < datetime.date.today():
-           raise ValidationError('Invalid date - renewal in past')
+           raise ValidationError('Неверная дата – продление в прошлом.')
 
        #Check date is in range librarian allowed to change (+4 weeks)
        if data > datetime.date.today() + datetime.timedelta(weeks=4):
-           raise ValidationError('Invalid date - renewal more than 4 weeks ahead')
+           raise ValidationError('Неверная дата – продление более чем на 4 недели вперед.')
 
        # Не забывайте всегда возвращать очищенные данные
        return data
@@ -22,6 +22,6 @@ class RenewBookModelForm(ModelForm):
     class Meta:
         model = BookInstance
         fields = ['due_back',]
-        labels = { 'due_back': ('Renewal date'), }
-        help_texts = { 'due_back': ('Enter a date between now and 4 weeks (default 3).'), }
+        labels = { 'due_back': ('Дата продления'), }
+        help_texts = { 'due_back': ('Введите дату между текущим моментом и 4 неделями (по умолчанию 3).'), }
 

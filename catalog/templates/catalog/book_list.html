@@ -1,7 +1,7 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-    <h1>Book List</h1>
+    <h1>Список Книг</h1>
 
     {% if book_list %}
     <ul>
@@ -12,6 +12,6 @@
       {% endfor %}
     </ul>
     {% else %}
-      <p>There are no books in the library.</p>
+      <p>В библиотеке нет книг.</p>
     {% endif %}
 {% endblock %}
