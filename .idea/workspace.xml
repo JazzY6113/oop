@@ -4,25 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd2157bc-07c0-4034-bd45-a1dcc2720fa1" name="Changes" comment="Сессии">
-      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/all_borrowed_books.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/bookinstance_list_borrowed_user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/templates/registration/logged_out.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/templates/registration/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/templates/registration/password_reset_complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/templates/registration/password_reset_confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/templates/registration/password_reset_done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/templates/registration/password_reset_email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/templates/registration/password_reset_form.html" afterDir="false" />
+    <list default="true" id="dd2157bc-07c0-4034-bd45-a1dcc2720fa1" name="Changes" comment="Аутентификация и авторизация пользователя">
+      <change afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/author_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/author_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/book_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/book_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/book_renew_librarian.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/all_borrowed_books.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/all_borrowed_books.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/author_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/author_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,14 +44,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Exz00/OneDrive/Рабочий стол/ТТИТ/2 курс/Разработка кода информационных систем/Django-Монолит/mysite"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Exz00/OneDrive/Рабочий стол/ТТИТ/2 курс/Разработка кода информационных систем/Django-Монолит/mysite&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Exz00\PycharmProjects\locallibrary\catalog\templates" />
@@ -168,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733164254712</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Аутентификация и авторизация пользователя">
+      <option name="closed" value="true" />
+      <created>1733170581173</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1733170581173</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -179,6 +182,7 @@
     <MESSAGE value="Создание домашней страницы" />
     <MESSAGE value="Отображение списков и детальной информации" />
     <MESSAGE value="Сессии" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сессии" />
+    <MESSAGE value="Аутентификация и авторизация пользователя" />
+    <option name="LAST_COMMIT_MESSAGE" value="Аутентификация и авторизация пользователя" />
   </component>
 </project>

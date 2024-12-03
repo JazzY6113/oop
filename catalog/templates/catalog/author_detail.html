@@ -8,8 +8,8 @@
 <h2>Книги автора</h2>
 <ul>
     {% for book in author.book_set.all %}
-    <p><stron><a href="{{ book.get_absolute_url }}">{{ book.title }} ({{ book.id }})</a><br>
-      {{ book.summary }}</stron></p>
+    <p><strong><a href="{{ book.get_absolute_url }}">{{ book.title }} ({{ book.id }})</a><br>
+      {{ book.summary }}</strong></p>
     {% endfor %}
 </ul>
 
