@@ -13,6 +13,7 @@ from .forms import RenewBookModelForm
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from .models import Author
+from .forms import AuthorForm
 
 def index(request):
     """
@@ -114,11 +115,13 @@ def renew_book_librarian(request, pk):
 
 class AuthorCreate(CreateView):
     model = Author
+    form_class = AuthorForm
     fields = '__all__'
     initial={'date_of_death':'12/10/2016',}
 
 class AuthorUpdate(UpdateView):
     model = Author
+    form_class = AuthorForm
     fields = ['first_name','last_name','date_of_birth','date_of_death']
 
 class AuthorDelete(DeleteView):

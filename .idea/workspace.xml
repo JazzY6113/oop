@@ -4,28 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd2157bc-07c0-4034-bd45-a1dcc2720fa1" name="Changes" comment="Работа с формами">
+    <list default="true" id="dd2157bc-07c0-4034-bd45-a1dcc2720fa1" name="Changes" comment="Ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/all_borrowed_books.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/all_borrowed_books.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/author_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/author_confirm_delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/book_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/book_confirm_delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/book_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/book_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/book_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/book_renew_librarian.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/book_renew_librarian.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/bookinstance_list_borrowed_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/bookinstance_list_borrowed_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/registration/logged_out.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/registration/logged_out.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/registration/password_reset_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/registration/password_reset_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/registration/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/registration/password_reset_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/registration/password_reset_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/registration/password_reset_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/registration/password_reset_email.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/registration/password_reset_email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/registration/password_reset_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/registration/password_reset_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733214517755</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Ready">
+      <option name="closed" value="true" />
+      <created>1733219335991</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1733219335991</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -200,6 +192,7 @@
     <MESSAGE value="Сессии" />
     <MESSAGE value="Аутентификация и авторизация пользователя" />
     <MESSAGE value="Работа с формами" />
-    <option name="LAST_COMMIT_MESSAGE" value="Работа с формами" />
+    <MESSAGE value="Ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ready" />
   </component>
 </project>

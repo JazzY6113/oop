@@ -1,8 +1,10 @@
+import uuid
 from django.db import models
 from django.urls import reverse
-import uuid
 from django.contrib.auth.models import User
 from datetime import date
+from django.core.exceptions import ValidationError
+from datetime import date, timedelta
 
 class MyModelName(models.Model):
     """Типичный класс модели, производный от класса Model."""
@@ -107,10 +109,10 @@ class Author(models.Model):
     """
     Model representing an author.
     """
-    first_name = models.CharField(max_length=100)
-    last_name = models.CharField(max_length=100)
-    date_of_birth = models.DateField(null=True, blank=True)
-    date_of_death = models.DateField('Умер', null=True, blank=True)
+    first_name = models.CharField('Имя',max_length=100)
+    last_name = models.CharField('Фамилия',max_length=100)
+    date_of_birth = models.DateField('Дата рождения', null=True, blank=True)
+    date_of_death = models.DateField('Дата смерти', null=True, blank=True)
 
     def get_absolute_url(self):
         """
@@ -123,6 +125,15 @@ class Author(models.Model):
         String for representing the Model object.
         """
         return '%s, %s' % (self.last_name, self.first_name)
+
+    def clean(self):
+        # Проверка даты рождения
+        if self.date_of_birth and self.date_of_birth > date.today() - timedelta(days=18 * 365):
+            raise ValidationError({'date_of_birth': 'Автор должен быть старше 18 лет.'})
+
+        # Проверка даты смерти
+        if self.date_of_death and self.date_of_death >= date.today():
+            raise ValidationError({'date_of_death': 'Дата смерти не ранее, чем вчера.'})
 
     class Meta:
         ordering = ['last_name']
